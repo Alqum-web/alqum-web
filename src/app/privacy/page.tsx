@@ -50,8 +50,8 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold text-foreground">5. Your Rights</h2>
           <p className="mt-2">
             You may request deletion of your data at any time by contacting us at{" "}
-            <a href="mailto:hello@alqum.com" className="text-primary hover:underline">
-              hello@alqum.com
+            <a href="mailto:support@alqum.com" className="text-primary hover:underline">
+              support@alqum.com
             </a>.
           </p>
         </section>
@@ -60,8 +60,8 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold text-foreground">6. Contact</h2>
           <p className="mt-2">
             For questions about this privacy policy, contact us at{" "}
-            <a href="mailto:hello@alqum.com" className="text-primary hover:underline">
-              hello@alqum.com
+            <a href="mailto:support@alqum.com" className="text-primary hover:underline">
+              support@alqum.com
             </a>.
           </p>
         </section>

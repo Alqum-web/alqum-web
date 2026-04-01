@@ -38,7 +38,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <a href="mailto:hello@alqum.com" className="text-sm text-muted hover:text-foreground transition-colors">
+                  <a href="mailto:support@alqum.com" className="text-sm text-muted hover:text-foreground transition-colors">
                     Contact
                   </a>
                 </li>

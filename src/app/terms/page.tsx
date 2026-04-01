@@ -63,8 +63,8 @@ export default function TermsPage() {
           <h2 className="text-lg font-semibold text-foreground">7. Contact</h2>
           <p className="mt-2">
             For questions about these terms, contact us at{" "}
-            <a href="mailto:hello@alqum.com" className="text-primary hover:underline">
-              hello@alqum.com
+            <a href="mailto:support@alqum.com" className="text-primary hover:underline">
+              support@alqum.com
             </a>.
           </p>
         </section>

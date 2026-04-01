@@ -91,10 +91,10 @@ export default function AboutPage() {
         <p className="mt-4 text-muted">
           Interested in partnering or learning more?{" "}
           <a
-            href="mailto:hello@alqum.com"
+            href="mailto:support@alqum.com"
             className="text-primary hover:underline"
           >
-            hello@alqum.com
+            support@alqum.com
           </a>
         </p>
       </section>
