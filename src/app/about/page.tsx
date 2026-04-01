@@ -3,14 +3,14 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn about the team behind Alqum and our mission to fix compliance in hardware development.",
+  description: "Learn about the team behind Alqum and our mission to fix compliance in design and manufacturing.",
 };
 
 const team = [
   {
     name: "Dr. Deepak Soman",
     role: "Co-founder",
-    bio: "Modelling and materials engineer with a doctorate from IIT Bombay. 8+ years across mechanical engineering, manufacturing, and applied AI.",
+    bio: "Modelling and materials engineer with a doctorate from IIT Bombay. 8+ years in mechanical engineering, manufacturing, and applied AI.",
     linkedin: "https://www.linkedin.com/in/deepak-soman-608b8566/",
     initials: "DS",
   },
@@ -33,22 +33,22 @@ export default function AboutPage() {
         </h1>
         <div className="mt-6 space-y-4 text-muted leading-relaxed">
           <p>
-            Hardware compliance slows down every engineering team. Engineers spend too
-            much of their week on compliance documentation when they should be
-            designing. And when compliance issues show up late in the design cycle,
-            the result is expensive redesigns and delayed shipments.
+            Compliance slows down every design and manufacturing team. Engineers
+            spend too much of their week on compliance documentation when they
+            should be designing. And when compliance issues show up late, the
+            result is costly redesigns and delayed production.
           </p>
           <p>
-            We think compliance should be part of the design process from the start,
-            not something bolted on at the end. Alqum brings compliance validation
-            directly into CAD workflows, catching issues in real time and generating
+            We believe compliance should be part of the design process from the
+            start. Alqum uses AI agents to validate compliance directly inside
+            your CAD workflow, catching issues in real time and generating
             documentation automatically.
           </p>
           <p>
             Long term, we want to build the collaboration and lifecycle management
-            platform for hardware engineering. Think GitHub meets Cursor, but for
-            CAD. We are starting with compliance because it is the most painful and
-            most neglected part of hardware development.
+            platform for product engineering. Think GitHub meets Cursor, but for
+            CAD. We are starting with compliance because it is the most painful
+            and most neglected part of the process.
           </p>
         </div>
       </section>

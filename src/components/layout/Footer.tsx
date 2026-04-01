@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-lg font-bold text-foreground">Alqum</span>
             </div>
             <p className="mt-2 max-w-xs text-sm text-muted">
-              Compliance automation for hardware engineering teams.
+              AI-powered compliance for design and manufacturing teams.
             </p>
           </div>
 

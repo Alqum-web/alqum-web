@@ -16,29 +16,29 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Alqum - Ship Compliant Hardware Faster",
+    default: "Alqum - AI Agents for Design Compliance",
     template: "%s | Alqum",
   },
   description:
-    "Alqum automates compliance inside your CAD workflow. Stop losing engineering hours to compliance paperwork.",
+    "Alqum brings compliance into your CAD workflow using AI agents. Built for design and manufacturing teams.",
   metadataBase: new URL("https://www.alqum.com"),
   icons: {
     icon: "/logo.png",
     apple: "/logo.png",
   },
   openGraph: {
-    title: "Alqum - Ship Compliant Hardware Faster",
+    title: "Alqum - AI Agents for Design Compliance",
     description:
-      "Alqum automates compliance inside your CAD workflow. Stop losing engineering hours to compliance paperwork.",
+      "Alqum brings compliance into your CAD workflow using AI agents. Built for design and manufacturing teams.",
     url: "https://www.alqum.com",
     siteName: "Alqum",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alqum - Ship Compliant Hardware Faster",
+    title: "Alqum - AI Agents for Design Compliance",
     description:
-      "Alqum automates compliance inside your CAD workflow.",
+      "Alqum brings compliance into your CAD workflow using AI agents.",
   },
 };
 
