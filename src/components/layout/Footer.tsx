@@ -10,7 +10,12 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2">
               <Image src="/logo.png" alt="Alqum" width={24} height={24} />
-              <span className="text-lg font-bold text-foreground">Alqum</span>
+              <div className="flex flex-col">
+                <span className="text-lg font-bold leading-tight text-foreground">Alqum</span>
+                <span className="text-[10px] tracking-widest uppercase text-muted">
+                  Engineering foundations
+                </span>
+              </div>
             </div>
             <p className="mt-2 max-w-xs text-sm text-muted">
               AI-powered compliance for design and manufacturing teams.

@@ -10,14 +10,14 @@ const team = [
   {
     name: "Dr. Deepak Soman",
     role: "Co-founder",
-    bio: "Modelling and materials engineer with a doctorate from IIT Bombay. 8+ years in mechanical engineering, manufacturing, and applied AI.",
+    bio: "Modelling and materials engineer with a doctorate from IIT Bombay. Over 8 years of experience in mechanical engineering, manufacturing, and applied AI.",
     linkedin: "https://www.linkedin.com/in/deepak-soman-608b8566/",
     initials: "DS",
   },
   {
     name: "Jitesh",
     role: "Co-founder",
-    bio: "Applied AI/ML engineer with hands-on experience in modelling and manufacturing systems.",
+    bio: "Applied AI and ML engineer with experience building modelling and manufacturing systems.",
     linkedin: null,
     initials: "J",
   },
@@ -34,21 +34,21 @@ export default function AboutPage() {
         <div className="mt-6 space-y-4 text-muted leading-relaxed">
           <p>
             Compliance slows down every design and manufacturing team. Engineers
-            spend too much of their week on compliance documentation when they
-            should be designing. And when compliance issues show up late, the
-            result is costly redesigns and delayed production.
+            spend hours on compliance documentation when they should be
+            designing. When issues surface late, the result is redesigns,
+            delays, and wasted budget.
           </p>
           <p>
-            We believe compliance should be part of the design process from the
+            We think compliance should be part of the design process from the
             start. Alqum uses AI agents to validate compliance directly inside
-            your CAD workflow, catching issues in real time and generating
-            documentation automatically.
+            the CAD workflow, catching issues in real time and generating
+            documentation as you go.
           </p>
           <p>
-            Long term, we want to build the collaboration and lifecycle management
-            platform for product engineering. Think GitHub meets Cursor, but for
-            CAD. We are starting with compliance because it is the most painful
-            and most neglected part of the process.
+            Longer term, we want to build the collaboration and lifecycle
+            management platform for product engineering. We are starting with
+            compliance because it is the most painful and most neglected part
+            of the process.
           </p>
         </div>
       </section>

@@ -12,9 +12,14 @@ export default function Nav() {
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2">
           <Image src="/logo.png" alt="Alqum" width={32} height={32} />
-          <span className="text-xl font-bold tracking-tight text-foreground">
-            Alqum
-          </span>
+          <div className="flex flex-col">
+            <span className="text-xl font-bold tracking-tight leading-tight text-foreground">
+              Alqum
+            </span>
+            <span className="text-[10px] tracking-widest uppercase text-muted">
+              Engineering foundations
+            </span>
+          </div>
         </Link>
 
         {/* Desktop */}

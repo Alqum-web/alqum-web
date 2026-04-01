@@ -4,14 +4,14 @@ const founders = [
   {
     name: "Dr. Deepak Soman",
     role: "Co-founder",
-    bio: "Modelling and materials engineer with a doctorate from IIT Bombay. 8+ years across mechanical engineering, manufacturing, and applied AI.",
+    bio: "Modelling and materials engineer with a doctorate from IIT Bombay. Over 8 years of experience in mechanical engineering, manufacturing, and applied AI.",
     linkedin: "https://www.linkedin.com/in/deepak-soman-608b8566/",
     initials: "DS",
   },
   {
     name: "Jitesh",
     role: "Co-founder",
-    bio: "Applied AI/ML engineer with hands-on experience in modelling and manufacturing systems.",
+    bio: "Applied AI and ML engineer with experience building modelling and manufacturing systems.",
     linkedin: null,
     initials: "J",
   },
@@ -26,7 +26,7 @@ export default function Founders() {
             Built by engineers, for engineers
           </h2>
           <p className="mt-4 text-muted md:text-lg">
-            We have lived the compliance pain firsthand.
+            We have dealt with compliance pain firsthand.
           </p>
         </div>
 

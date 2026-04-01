@@ -9,7 +9,7 @@ export default function CTA() {
         </h2>
         <p className="mt-4 text-blue-100 md:text-lg">
           We are building Alqum for design and manufacturing teams
-          who are tired of compliance slowing them down. Join the waitlist.
+          who are tired of compliance slowing them down.
         </p>
         <div className="mt-8">
           <Button
