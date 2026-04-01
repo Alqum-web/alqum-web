@@ -3,20 +3,29 @@
 import { useState } from "react";
 
 export default function WaitlistForm() {
-  const [email, setEmail] = useState("");
+  const [form, setForm] = useState({
+    email: "",
+    name: "",
+    company: "",
+    role: "",
+  });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState("");
 
+  function update(field: string, value: string) {
+    setForm((prev) => ({ ...prev, [field]: value }));
+  }
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!email) return;
+    if (!form.email) return;
 
     setStatus("loading");
     try {
       const res = await fetch("/api/waitlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify(form),
       });
 
       const data = await res.json();
@@ -24,7 +33,7 @@ export default function WaitlistForm() {
       if (res.ok) {
         setStatus("success");
         setMessage("You're on the list! We'll be in touch soon.");
-        setEmail("");
+        setForm({ email: "", name: "", company: "", role: "" });
       } else {
         setStatus("error");
         setMessage(data.error || "Something went wrong. Please try again.");
@@ -46,16 +55,42 @@ export default function WaitlistForm() {
     );
   }
 
+  const inputClass =
+    "w-full rounded-lg border border-border px-4 py-2.5 text-sm text-foreground placeholder:text-muted/60 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20";
+
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:flex-row">
-      <input
-        type="email"
-        required
-        placeholder="you@company.com"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        className="flex-1 rounded-lg border border-border px-4 py-2.5 text-sm text-foreground placeholder:text-muted/60 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
-      />
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+      <div className="grid gap-3 sm:grid-cols-2">
+        <input
+          type="text"
+          placeholder="Full name"
+          value={form.name}
+          onChange={(e) => update("name", e.target.value)}
+          className={inputClass}
+        />
+        <input
+          type="email"
+          required
+          placeholder="you@company.com"
+          value={form.email}
+          onChange={(e) => update("email", e.target.value)}
+          className={inputClass}
+        />
+        <input
+          type="text"
+          placeholder="Company"
+          value={form.company}
+          onChange={(e) => update("company", e.target.value)}
+          className={inputClass}
+        />
+        <input
+          type="text"
+          placeholder="Role (e.g. Mechanical Engineer)"
+          value={form.role}
+          onChange={(e) => update("role", e.target.value)}
+          className={inputClass}
+        />
+      </div>
       <button
         type="submit"
         disabled={status === "loading"}
@@ -64,7 +99,7 @@ export default function WaitlistForm() {
         {status === "loading" ? "Joining..." : "Join Waitlist"}
       </button>
       {status === "error" && (
-        <p className="text-sm text-red-500 sm:absolute sm:mt-12">{message}</p>
+        <p className="text-sm text-red-500">{message}</p>
       )}
     </form>
   );

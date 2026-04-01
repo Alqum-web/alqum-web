@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const { email } = await request.json();
+    const { email, name, company, role } = await request.json();
 
     if (!email || typeof email !== "string") {
       return NextResponse.json(
@@ -58,7 +58,12 @@ export async function POST(request: NextRequest) {
 
     const { error: dbError } = await supabase
       .from("waitlist")
-      .insert({ email: email.toLowerCase() });
+      .insert({
+        email: email.toLowerCase(),
+        name: name || null,
+        company: company || null,
+        role: role || null,
+      });
 
     if (dbError) {
       if (dbError.code === "23505") {
