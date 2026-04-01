@@ -1,8 +1,8 @@
 const features = [
   {
-    title: "Inline compliance validation",
+    title: "Inline compliance checks",
     description:
-      "Get real-time compliance checks as you design — not weeks later in a review meeting.",
+      "See compliance status in real time as you design, not weeks later in a review meeting.",
     icon: (
       <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -12,7 +12,7 @@ const features = [
   {
     title: "Version-controlled compliance",
     description:
-      "Every design change is tracked alongside its compliance status. Full audit trail, zero extra effort.",
+      "Every design change is tracked alongside its compliance status. Full audit trail without extra effort.",
     icon: (
       <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
@@ -20,9 +20,9 @@ const features = [
     ),
   },
   {
-    title: "Auto-generated artifacts",
+    title: "Auto-generated documentation",
     description:
-      "Compliance documents, reports, and certifications generated automatically from your design data.",
+      "Compliance reports and certifications are created automatically from your design data. No more manual paperwork.",
     icon: (
       <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
@@ -40,8 +40,7 @@ export default function Solution() {
             Compliance built into your CAD workflow
           </h2>
           <p className="mt-4 text-muted md:text-lg">
-            Alqum integrates directly into your design process — no
-            separate tools, no context switching.
+            Alqum plugs directly into your design process. No separate tools, no context switching.
           </p>
         </div>
 
@@ -62,11 +61,11 @@ export default function Solution() {
               </li>
               <li className="flex gap-2">
                 <span className="text-red-400">&#10005;</span>
-                Costly redesigns when issues found late
+                Expensive redesigns when issues surface late
               </li>
               <li className="flex gap-2">
                 <span className="text-red-400">&#10005;</span>
-                Weeks to generate compliance documentation
+                Weeks to put together compliance documentation
               </li>
             </ul>
           </div>
@@ -77,19 +76,19 @@ export default function Solution() {
             <ul className="mt-4 space-y-3 text-sm text-muted">
               <li className="flex gap-2">
                 <span className="text-green-500">&#10003;</span>
-                Real-time compliance as you design
+                Compliance feedback as you design
               </li>
               <li className="flex gap-2">
                 <span className="text-green-500">&#10003;</span>
-                Compliance data versioned with your CAD files
+                Compliance data versioned alongside your CAD files
               </li>
               <li className="flex gap-2">
                 <span className="text-green-500">&#10003;</span>
-                Issues caught before they become expensive
+                Problems caught before they get expensive
               </li>
               <li className="flex gap-2">
                 <span className="text-green-500">&#10003;</span>
-                Compliance docs generated in seconds
+                Compliance docs ready in seconds
               </li>
             </ul>
           </div>

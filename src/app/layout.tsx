@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   description:
     "Alqum automates compliance inside your CAD workflow. Stop losing engineering hours to compliance paperwork.",
   metadataBase: new URL("https://www.alqum.com"),
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "Alqum - Ship Compliant Hardware Faster",
     description:

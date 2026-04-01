@@ -13,8 +13,7 @@ export default function Hero() {
         </h1>
         <p className="mt-6 text-lg text-muted md:text-xl">
           Engineers lose hours every week to compliance paperwork.
-          Alqum automates it inside your CAD workflow — so you can
-          focus on designing, not documenting.
+          Alqum catches compliance issues while you design, not after.
         </p>
         <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <Button href="/waitlist">Get Early Access</Button>

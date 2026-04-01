@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Nav() {
@@ -9,8 +10,11 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-white/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <Link href="/" className="text-xl font-bold tracking-tight text-foreground">
-          Alqum
+        <Link href="/" className="flex items-center gap-2">
+          <Image src="/logo.png" alt="Alqum" width={32} height={32} />
+          <span className="text-xl font-bold tracking-tight text-foreground">
+            Alqum
+          </span>
         </Link>
 
         {/* Desktop */}

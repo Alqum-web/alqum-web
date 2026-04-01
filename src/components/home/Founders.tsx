@@ -1,16 +1,19 @@
+import Link from "next/link";
+
 const founders = [
   {
-    name: "Founder Name",
-    role: "CEO & Co-founder",
-    bio: "10+ years in hardware engineering. Previously at [Company].",
-    // Replace with real image path
-    image: null,
+    name: "Dr. Deepak Soman",
+    role: "Co-founder",
+    bio: "Modelling and materials engineer with a doctorate from IIT Bombay. 8+ years across mechanical engineering, manufacturing, and applied AI.",
+    linkedin: "https://www.linkedin.com/in/deepak-soman-608b8566/",
+    initials: "DS",
   },
   {
-    name: "Founder Name",
-    role: "CTO & Co-founder",
-    bio: "Background in CAD systems and compliance automation.",
-    image: null,
+    name: "Jitesh",
+    role: "Co-founder",
+    bio: "Applied AI/ML engineer with hands-on experience in modelling and manufacturing systems.",
+    linkedin: null,
+    initials: "J",
   },
 ];
 
@@ -23,23 +26,32 @@ export default function Founders() {
             Built by engineers, for engineers
           </h2>
           <p className="mt-4 text-muted md:text-lg">
-            We&apos;ve lived the compliance pain firsthand.
+            We have lived the compliance pain firsthand.
           </p>
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-8 md:flex-row md:justify-center">
           {founders.map((f) => (
             <div
-              key={f.name + f.role}
+              key={f.name}
               className="flex w-full max-w-sm flex-col items-center rounded-xl border border-border bg-white p-6 text-center"
             >
-              {/* Placeholder avatar */}
               <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 text-primary text-2xl font-bold">
-                {f.name.split(" ").map((n) => n[0]).join("")}
+                {f.initials}
               </div>
               <h3 className="text-lg font-semibold text-foreground">{f.name}</h3>
               <p className="text-sm text-primary">{f.role}</p>
               <p className="mt-2 text-sm text-muted">{f.bio}</p>
+              {f.linkedin && (
+                <Link
+                  href={f.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 text-xs text-primary hover:underline"
+                >
+                  LinkedIn
+                </Link>
+              )}
             </div>
           ))}
         </div>
