@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 
 export default function Hero() {
@@ -22,6 +23,17 @@ export default function Hero() {
             Learn More
           </Button>
         </div>
+      </div>
+
+      <div className="mx-auto mt-12 max-w-4xl overflow-hidden rounded-xl border border-border shadow-2xl">
+        <Image
+          src="/mock-agent-chat.png"
+          alt="Alqum AI agent performing geometric compliance analysis on a CAD model"
+          width={1920}
+          height={1080}
+          className="w-full"
+          priority
+        />
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const features = [
   {
     title: "Live compliance checks",
@@ -91,6 +93,36 @@ export default function Solution() {
                 Compliance docs generated in seconds
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Product screenshots */}
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="overflow-hidden rounded-xl border border-border shadow-lg">
+            <Image
+              src="/mock-gdt-compliance.png"
+              alt="Real-time GD&T compliance monitoring inside the CAD viewport"
+              width={1920}
+              height={1080}
+              className="w-full"
+            />
+            <div className="bg-white p-4">
+              <h3 className="font-semibold text-foreground">Live compliance checks</h3>
+              <p className="mt-1 text-sm text-muted">AI agents monitor your design as you work and flag issues in real time.</p>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-xl border border-border shadow-lg">
+            <Image
+              src="/mock-dfm-feasibility.png"
+              alt="Automated DFM feasibility analysis with scoring and issue breakdown"
+              width={1920}
+              height={1080}
+              className="w-full"
+            />
+            <div className="bg-white p-4">
+              <h3 className="font-semibold text-foreground">DFM feasibility analysis</h3>
+              <p className="mt-1 text-sm text-muted">Automated manufacturability checks with actionable feedback before you go to production.</p>
+            </div>
           </div>
         </div>
 
